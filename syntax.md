@@ -76,7 +76,7 @@ Note that this does help create a very confusing situation of 4 different but si
 | -------- | ------------------------------------------------------------ |
 | `=`      | Assign a value to a variable or member                       |
 | `==`     | Check if two objects are equal                               |
-| `===`    | Binary equal - see [logic]((https://github.com/up-lang/spec/blob/master/syntax/logic.md#===)) |
+| `===`    | Binary equal - see [logic](https://github.com/up-lang/spec/blob/master/syntax/logic.md#===) |
 | `====`   | `a ==== b` is equivalent to `a = a === b`. Yep. It's confusing. |
 
 ```up
