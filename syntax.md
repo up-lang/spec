@@ -84,3 +84,9 @@ var a Int = 5;
 a += 4; ~ 9
 a *= 3; ~ 27
 ```
+
+### Increment and Decrement
+
+`++` and `--` increment and decrement a value by one.
+
+Appending them returns their value and then modifies them, prepending modifies them and then returns them.
