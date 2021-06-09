@@ -16,7 +16,7 @@ This should be exposed under the `upcore:types` namespace.
 
 - [binary & boolean](https://github.com/up-lang/spec/blob/master/essentials/basic_types/binary.md)
 - [integers](https://github.com/up-lang/spec/blob/master/essentials/basic_types/integers.md)
-- [decimals](https://github.com/up-lang/spec/blob/master/essentials/basic_types/decimal.md)
+- [decimals](https://github.com/up-lang/spec/blob/master/essentials/basic_types/decimals.md)
 - [text](https://github.com/up-lang/spec/blob/master/essentials/basic_types/text.md)
 
 ### [STDIO](https://github.com/up-lang/spec/blob/master/essentials/stdio.md)
