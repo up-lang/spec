@@ -1,10 +1,12 @@
 # Language Essentials
 
-The interpreter or compiler is expected to provide a namespace called `upcore` which contains the essential basics on which everything, including the standard library is built.
+The interpreter or compiler is expected to provide a namespace called `upcore` which contains the essential basics on which everything, including the standard library is built. This namespace exists "magically" - it doesn't technically exist as any UP code you'd import, but the interpreter / compiler makes it work to give this language the raw basics to do things.
+
+**NOTE: as of now there are some types that could be implemented in UP - for example non-`byte` int types, but for simplicity they are provided by `upcore` at least for now**
 
 Note that is it recommended to use the types provided by the standard library, however.
 
-The items included here are purposefully kept to a minimum as the main bulk of provided tools should be provided by the standard library. The existence of `upcore` is just so that the standard library isn't magical and tied to the interpreter - you can theoretically write your own replacement for it entirely in UP.
+The items included here are purposefully kept to a minimum as the main bulk of provided tools should be provided by the standard library. The existence of `upcore` is just so that the standard library isn't "magical" like `upcore` is - I'd rather have as little as possible be done this way, and also it means you can theoretically write your own replacement for `stdlib` entirely in UP if you wished.
 
 ## Included items
 
