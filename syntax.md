@@ -2,21 +2,21 @@
 
 ## Defining objects
 
-See [defining objects]((https://github.com/up-lang/spec/blob/master/syntax/defining_objects.md)).
+See [defining objects](https://github.com/up-lang/spec/blob/master/syntax/defining_objects.md).
 
 ## Literals
 
-See [literals]((https://github.com/up-lang/spec/blob/master/syntax/literals.md)).
+See [literals](https://github.com/up-lang/spec/blob/master/syntax/literals.md).
 
 ## Operators
 
 ### Comparisons
 
-See [comparison]((https://github.com/up-lang/spec/blob/master/syntax/comparison.md)).
+See [comparison](https://github.com/up-lang/spec/blob/master/syntax/comparison.md).
 
 ### Binary & Logic
 
-See [logic]((https://github.com/up-lang/spec/blob/master/syntax/logic.md)).
+See [logic](https://github.com/up-lang/spec/blob/master/syntax/logic.md).
 
 ## Misc
 
