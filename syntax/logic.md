@@ -58,7 +58,7 @@ If you have a binary number, say `10010110`, and you wished to set a bit to `1` 
 
 ```up
 var exampleByte Byte = 0b10010110;
-exampleByte        &&= 1 << 5;
+exampleByte        ||= 1 << 5;
 
 ~ exampleByte now contains 10110110, with the 6th bit from the right set to 0
 ```
@@ -89,6 +89,3 @@ This operator checks if the bits in both numbers are equal and returns the resul
 ```up
 _ = 0b01110001 === 0b01111100; ~ 11110010
 ```
-
-
-
