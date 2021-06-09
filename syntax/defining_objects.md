@@ -37,6 +37,19 @@ class MyAmazingClass
 }
 ```
 
+Classes can be generic - they take a type parameter in angle brackets `<>`, which can then be used like an actual type. The type parameter must be provided as part of the class' type singature when used.
+
+### Example
+
+```up
+class MyAmazingClass<T>
+{
+	~ from here on, T is acceptable in place of an actual type.
+}
+```
+
+
+
 ## Enums
 
 Enums are used to store a list of possible values. They are often used to store states etc.
