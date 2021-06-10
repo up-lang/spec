@@ -22,7 +22,63 @@ See [comparison](https://github.com/up-lang/spec/blob/master/syntax/comparison.m
 
 See [logic](https://github.com/up-lang/spec/blob/master/syntax/logic.md).
 
+### Defining operators for your types
+
+Add a function to your class, though instead of specifying an accessibility modifier, use `operator`, and then use the following names for redefining operators.
+
+| `+`     | `-`     | `*`     | `/`     | `//`       | `%`     |
+| ------- | ------- | ------- | ------- | ---------- | ------- |
+| `add()` | `sub()` | `mul()` | `div()` | `intdiv()` | `mod()` |
+
+| `|`    | `||`     | `|||`   | `&`     | `&&`      | `!`     | `===`     | `==`   |
+| ------ | -------- | ------- | ------- | --------- | ------- | --------- | ------ |
+| `or()` | `orSc()` | `xor()` | `and()` | `andSc()` | `not()` | `eqBin()` | `eq()` |
+
+#### Example
+
+```up
+with stdlib;
+
+namespace MyApp
+{
+	class CustomClass
+	{
+		public FirstInt  Int32;
+		public SecondInt Int32;
+		
+		operator add(first CustomClass, second CustomClass) CustomClass
+		{
+			var new CustomClass = new CustomClass();
+			new.FirstInt = first.FirstInt + second.FirstInt;
+			new.SecondInt = first.SecondInt + second.SecondInt;
+			return new;
+		}
+	}
+	
+	class Program
+	{
+		public Main() void
+		{
+			var first CustomClass = new CustomClass();
+			first.FirstInt = 6;
+			first.SecondInt = 7;
+			var second CustomClass = new CustomClass();
+			second.FirstInt = 9;
+			second.SecondInt = -2;
+			
+			var final CustomClass = first + second; ~ uses our custom operator!
+			~ final.FirstInt = 15
+			~ final.SecondInt = 5
+		}
+	}
+}
+```
+
 ## Misc
+
+### Instantiating types
+
+Create a class with `new Type()`, which calls a constructor defined on the type using `constructor` in place of an accessibility modifier. Structs and classes both have a default constructor with no arguments that uses all default values, though this is disabled once you define a custom constructor.
 
 ### Whitespace
 

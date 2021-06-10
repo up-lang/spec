@@ -14,6 +14,33 @@ Nothing is nullable by default, however a variable can be made nullable by prepe
 
 Namespaces can also contain `struct`s - these are not subject to UP's type system, are dealt with by the interpreter / compiler, and are used exclusively in the [*language essentials*](https://github.com/up-lang/spec/blob/master/language_essentials.md).
 
+## Entrypoints
+
+The acceptable entry-point for your program is `namespace.Program.Main()`, which returns `void`, is `public`, and can optionally take a type convertible to `upcore.primitivearray<upcore:types.string>`, in most cases this is `stdlib.Array<stdlib.String>`.
+
+The args array does not contain `argv[0]` - by convention the command used to execute a program on the command line.
+
+### Example
+
+```up
+with stdlib;
+
+namespace MyApp class Program
+{
+	public Main(args Array<String>) void
+	{
+		Console.WriteLine(args[0]);
+	}
+}
+```
+
+### Expected output
+
+```
+$ up MyApp/Program.up test
+test
+```
+
 ## Other important information
 
 The suggested file extension is `.up`

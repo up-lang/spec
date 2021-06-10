@@ -37,9 +37,7 @@ class MyAmazingClass
 }
 ```
 
-Classes can be generic - they take a type parameter in angle brackets `<>`, which can then be used like an actual type. The type parameter must be provided as part of the class' type singature when used.
-
-### Example
+Classes can be generic - they take a type parameter in angle brackets `<>`, which can then be used like an actual type. The type parameter must be provided as part of the class' type signature when used.
 
 ```up
 class MyAmazingClass<T>
@@ -47,8 +45,6 @@ class MyAmazingClass<T>
 	~ from here on, T is acceptable in place of an actual type.
 }
 ```
-
-
 
 ## Enums
 
@@ -100,6 +96,15 @@ class Door
 	
 	public IsOpen()            Bit  { return open; }
 	public SetOpen(isOpen Bit) void { open = isOpen; }
+}
+```
+
+Methods can be generic - they take a type parameter in angle brackets `<>`, which can then be used like an actual type. The type parameter must be provided as part of the method's signature when used.
+
+```up
+public MyAmazingMethod<T>() void
+{
+	~ from here on, T is acceptable in place of an actual type.
 }
 ```
 

@@ -19,9 +19,20 @@ This should be exposed under the `upcore:types` namespace.
 - [decimals](https://github.com/up-lang/spec/blob/master/essentials/basic_types/decimals.md)
 - [text](https://github.com/up-lang/spec/blob/master/essentials/basic_types/text.md)
 
+Integers and binary types (except bit) can be used for bit manipulation - the interpreter / compiler is expected to provide support for indexing on this type: using the `[]` operator can fetch or set a single `bit` easily. The following is an example of this:
+
+```up
+with upcore:types;
+
+var exampleByte byte = 0b10010011;
+var fourthBit   bit  = exampleByte[3]; ~ 1
+~ set the fifth bit, which is 0, to a 1
+exampleByte[4] = 1; ~ new value: 10011011
+```
+
 ### [STDIO](https://github.com/up-lang/spec/blob/master/essentials/stdio.md)
 
-This should be exposed under the `upcore.stdio` class.
+This should be exposed under the `upcore.stdio` struct.
 
 ### Filesystem
 
