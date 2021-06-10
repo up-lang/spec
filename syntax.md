@@ -10,6 +10,10 @@ See [literals](https://github.com/up-lang/spec/blob/master/syntax/literals.md).
 
 ## Operators
 
+### Arithmetic
+
+See [arithmetic](https://github.com/up-lang/spec/blob/master/syntax/arithmetic.md).
+
 ### Comparisons
 
 See [comparison](https://github.com/up-lang/spec/blob/master/syntax/comparison.md).
