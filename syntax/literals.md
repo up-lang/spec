@@ -48,5 +48,6 @@ Hexadecimal literals are created by starting with `0x`, and then following up wi
 ```up
 with stdlib;
 var myBinaryValue Byte = 0b10010010; ~ equal to 146 (if my mental arithmetic holds up!)
-var myHexValue    Byte = 0xA3;       ~ equal to 10100011, or 163 (again, may be wrong :P )
+var myHexValue    Byte = 0xA3;       ~ equal to 10100011, or 163 (again, ^^^ this)
 ```
+

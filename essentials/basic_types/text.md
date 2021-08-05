@@ -8,6 +8,6 @@
 
 `uchar` represents any character from Unicode. This type is convertible from and to integers.
 
-## `string`
+## `string2`
 
 `string` represents a series of unicode characters.

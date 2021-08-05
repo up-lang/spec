@@ -42,7 +42,3 @@ This should be exposed under the `upcore:filesystem` namespace.
 - [directory](https://github.com/up-lang/spec/blob/master/essentials/filesystem/directory.md)
 - [fs_object](https://github.com/up-lang/spec/blob/master/essentials/filesystem/fs_object.md)
 - [io](https://github.com/up-lang/spec/blob/master/essentials/filesystem/io.md)
-
-### Misc
-
-- `upcore.primitivearray<T>` is a generic array that is VERY primitive. It can only be read by querying indexes and cannot be wriiten to from inside of UP. It is used purely for `upcore` functions that need to return multiple items.
