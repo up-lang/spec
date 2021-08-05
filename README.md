@@ -43,6 +43,10 @@ $ up MyApp/Program.up test
 test
 ```
 
+## STDLIB docs
+
+Check [stdlib](https://github.com/up-lang/spec/blob/master/stdlib.md).
+
 ## Other important information
 
 The suggested file extension is `.up`
