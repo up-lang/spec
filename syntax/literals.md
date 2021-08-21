@@ -51,3 +51,11 @@ var myBinaryValue Byte = 0b10010010; ~ equal to 146 (if my mental arithmetic hol
 var myHexValue    Byte = 0xA3;       ~ equal to 10100011, or 163 (again, ^^^ this)
 ```
 
+## Arrays
+
+Array literals follow the following syntax: `new []` then a type then `{}` either containing nothing, or a comma separated list of expressions:
+
+```up
+with stdlib;
+var myEmptyArray = new []String{};
+var myCoolArray  = new []?String{ "hello", null "world" };
