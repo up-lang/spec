@@ -57,5 +57,11 @@ Array literals follow the following syntax: `new []` then a type then `{}` eithe
 
 ```up
 with stdlib;
-var myEmptyArray = new []String{};
-var myCoolArray  = new []?String{ "hello", null "world" };
+var myEmptyArray  = new []String{};
+var myCoolArray   = new []?String{ "hello", null, "world" };
+var arrayOfArrays = new [][]String
+{
+  new []String{ "Hello, ", "World!" },
+  new []String{ "Another ", "array" }
+};
+```
