@@ -82,6 +82,19 @@ then at 5, i < 5 no longer evaluates true and the loop exits, leaving a = 12
 ~~~
 ```
 
+## `foreach`
+
+A `foreach` loop will iterate over every value in a collection, providing the result to a var and the READ ONLY index of the item.
+
+### Example
+
+```up
+foreach (var item String index i in myImaginaryStrArray)
+{
+	// do something here
+}
+```
+
 ## `while`
 
 A `while` loop simply repeats the contents of its scope until the bit passed to it is no longer `1`.
